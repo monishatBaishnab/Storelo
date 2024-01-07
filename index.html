@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,57 +14,60 @@
     <!-- link custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- header section -->
-    <header>
-        <nav>
-            <!-- Left Side Contant -->
-            <div>
-                <!-- Category Dropdown -->
-                <div>
-                    <button><i class="fa-solid fa-bars"></i></button>
-                </div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Left Side Contant -->
+                <div class="left-nav">
+                    <!-- Category Dropdown -->
+                    <div class="ctg-btn">
+                        <button><i class="fa-solid fa-bars"></i></button>
+                    </div>
 
-                <!-- Nav Logo -->
-                <div>
-                    <span><i class="fa-regular fa-basket-shopping"></i></span>
-                    <h3>Storelo</h3>
-                </div>
-                <!-- Search Bar -->
-                <div>
-                    <div>
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text">
+                    <!-- Nav Logo -->
+                    <a href="#" class="nav-logo">
+                        <span><i class="fa-regular fa-basket-shopping"></i></span>
+                        <h4>Storelo</h4>
+                    </a>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <div class="search-form d-none d-md-flex">
+                            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            <input name="search" id="search" type="text">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Right Side Contant -->
-            <div>
-                <!-- Nav List -->
-                <div>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Support</a></li>
+                <!-- Right Side Contant -->
+                <div class="right-nav">
+                    <!-- Nav List -->
+                    <ul class="navbar-list d-none d-lg-flex align-items-center gap-3">
+                        <li class="navbar-list-item"><a class="navbar-list-link" href="">Home</a></li>
+                        <li class="navbar-list-item"><a class="navbar-list-link" href="">Product</a></li>
+                        <li class="navbar-list-item"><a class="navbar-list-link" href="">About Us</a></li>
+                        <li class="navbar-list-item"><a class="navbar-list-link" href="">Support</a></li>
                     </ul>
-                </div>
 
-                <!-- Nav Buttons -->
-                <div>
-                    <button><i class="fa-regular fa-cart-shopping"></i></button>
-                    <button><i class="fa-regular fa-heart"></i></button>
+                    <!-- Nav Buttons -->
+                    <div class="nav-buttons">
+                        <button class="d-none d-md-inline-block"><i class="fa-regular fa-cart-shopping"></i></button>
+                        <button class="d-none d-md-inline-block"><i class="fa-regular fa-heart"></i></button>
+                        <button class="d-inline d-md-none"><i class="fa-solid fa-bars-progress"></i></i></button>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <!-- main section -->
     <main>
 
     </main>
-    
+
     <script src="/js//bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
