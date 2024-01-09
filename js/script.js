@@ -2,7 +2,7 @@ const ctgBtn = document.getElementById('ctg-btn');
 const ctgBody = document.getElementById('ctg-body');
 const ctgSubBtns = document.querySelectorAll('.ctg-item');
 const ctgSubBodys = document.getElementsByClassName('ctg-submenu-body');
-
+console.log(ctgSubBtns);
 ctgBtn.addEventListener('mouseover', () => {
     ctgBody.style.visibility = 'visible';
     ctgBody.style.opacity = 1;
@@ -26,6 +26,7 @@ ctgBody.addEventListener('mouseout', () => {
 
 ctgSubBtns.forEach(ctgSubBtn => {
     ctgSubBtn.addEventListener('mouseover', () => {
+        console.log(ctgSubBtn.childNodes);
         ctgSubBtn.childNodes[1].style.visibility = 'visible';
         ctgSubBtn.childNodes[1].style.opacity = 1;
     })

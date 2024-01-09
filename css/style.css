@@ -25,6 +25,7 @@ body {
 
 .header {
   border-bottom: 1px solid #d8d8d0;
+  background: #edede5;
 }
 .header .nav {
   display: flex;
@@ -154,4 +155,153 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.main {
+  overflow: hidden;
+  min-height: 100vh;
+}
+.main .text-container h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.main .text-container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .text-container div .btn-primary {
+  background: #de7258;
+  border: none;
+  outline: none;
+}
+.main .circle-container {
+  position: relative;
+}
+.main .circle-container .circle-wrapper {
+  position: absolute;
+  right: -300px;
+  top: -400px;
+  z-index: -1;
+}
+.main .circle-container .circle-wrapper .outer-box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 2px solid #de7258;
+  margin: 50px auto;
+}
+.main .circle-container .circle-wrapper .outer-box .iner-box {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #FFF;
+  border-radius: 50%;
+  padding: 20px;
+  animation: circle 10s linear infinite;
+}
+.main .circle-container .circle-wrapper .outer-box .iner-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .circle-container .circle-wrapper-1 {
+  right: -200px;
+  top: -300px;
+}
+.main .circle-container .circle-wrapper-1 .outer-box {
+  width: 400px;
+  height: 400px;
+}
+.main .circle-container .circle-wrapper-1 .outer-box .iner-box {
+  animation: circle-1 15s linear infinite;
+}
+.main .circle-container .circle-wrapper-2 {
+  right: -400px;
+  top: -500px;
+}
+.main .circle-container .circle-wrapper-2 .outer-box {
+  width: 800px;
+  height: 800px;
+}
+.main .circle-container .circle-wrapper-2 .outer-box .iner-box {
+  animation: circle-2 20s linear infinite;
+}
+.main .product-card {
+  max-width: 350px;
+}
+.main .product-card .product-btn {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c0;
+}
+.main .product-card .bye-btn {
+  color: #de7258;
+}
+.main .shop-image-box {
+  position: relative;
+}
+.main .shop-image-box .offer-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(37, 150, 190, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  animation: moveBox 4s linear infinite;
+}
+.main .shop-image-box .offer-card .title {
+  width: 100%;
+  background: #de7258;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.main .shop-image-box .offer-card h4 {
+  margin-bottom: 0;
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+@keyframes circle-2 {
+  0% {
+    transform: rotate(0deg) translate(-400px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-400px) rotate(360deg);
+  }
+}
+@keyframes circle-1 {
+  0% {
+    transform: rotate(0deg) translate(-200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-200px) rotate(360deg);
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-300px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-300px) rotate(360deg);
+  }
+}
